@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="servername_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="encrypt_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="file_radiobtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="resourcePath_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 20</value>
+  </data>
+  <data name="startingEncryptionProcessMessage" xml:space="preserve">
+    <value>Starting encryption process of {0}: {1}</value>
+  </data>
+  <data name="serverResponse1000" xml:space="preserve">
+    <value>Username exists already.</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="password_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 40</value>
+  </data>
+  <data name="getKeySuccess" xml:space="preserve">
+    <value>Successfully acquired the key from the server.</value>
+  </data>
+  <data name="output_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 259</value>
+  </data>
+  <data name="decrypt_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 174</value>
+  </data>
+  <data name="resourcePath_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="serverResponse1001" xml:space="preserve">
+    <value>Something went wrong. If this error keeps showing up contact the admin of this service.</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="startDecryption" xml:space="preserve">
+    <value>Starting decryption, please wait...</value>
+  </data>
+  <data name="password_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cryptoProgressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>628, 23</value>
+  </data>
+  <data name="createaccount_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 174</value>
+  </data>
+  <data name="cryptoProgressBar.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="createaccount_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 35</value>
+  </data>
+  <data name="output_txt.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="output_txt.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="decryptSuccess" xml:space="preserve">
+    <value>The decryption was successful and has ended.</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="encrypt_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 35</value>
+  </data>
+  <data name="folder_radiobtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 17</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="serverResponse1004" xml:space="preserve">
+    <value>Wrong password, please try again.</value>
+  </data>
+  <data name="encryptFailed" xml:space="preserve">
+    <value>The encryption process had issues and failed. Encryption has ended.</value>
+  </data>
+  <data name="encryptSuccess" xml:space="preserve">
+    <value>The encryption was successful and has ended.</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="password_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 20</value>
+  </data>
+  <data name="getKey" xml:space="preserve">
+    <value>Getting key from server</value>
+  </data>
+  <data name="folder_radiobtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 19</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 106</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 24</value>
+  </data>
+  <data name="unzipFolderStart" xml:space="preserve">
+    <value>Started to unzip decrypted folder, please wait</value>
+  </data>
+  <data name="startingDecryptionProcessMessage" xml:space="preserve">
+    <value>Starting decryption process of {0}: {1}</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="decrypt_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 35</value>
+  </data>
+  <data name="username_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 40</value>
+  </data>
+  <data name="resourcePath_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 122</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="username_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 20</value>
+  </data>
+  <data name="zipFolderSuccessfull" xml:space="preserve">
+    <value>Zipping of folder was successful.</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 243</value>
+  </data>
+  <data name="encrypt_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 174</value>
+  </data>
+  <data name="decryptFailed" xml:space="preserve">
+    <value>The decryption process had issues and failed. Decryption has ended.</value>
+  </data>
+  <data name="decrypt_btn.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="servername_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 40</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>514, 96</value>
+  </data>
+  <data name="getKeyError" xml:space="preserve">
+    <value>Could not get the key from the server. Server message:</value>
+  </data>
+  <data name="file_radiobtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 19</value>
+  </data>
+  <data name="startCreateAccount" xml:space="preserve">
+    <value>Started to create new user</value>
+  </data>
+  <data name="servername_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="output_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>628, 259</value>
+  </data>
+  <data name="output_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="file_radiobtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 24</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="resourcePath_txt.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="folder_radiobtn.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="cryptoProgressBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 524</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="findresource_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 120</value>
+  </data>
+  <data name="zipFolderForEncrypt" xml:space="preserve">
+    <value>Started to zip the folder for encryption, please wait</value>
+  </data>
+  <data name="decrypt_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="username_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 24</value>
+  </data>
+  <data name="unzipFolderSuccess" xml:space="preserve">
+    <value>Unzipping folder was successful.</value>
+  </data>
+  <data name="startEncryption" xml:space="preserve">
+    <value>Starting encryption, please wait...</value>
+  </data>
+  <data name="folder_radiobtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>655, 570</value>
+  </data>
+  <data name="file_radiobtn.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="encrypt_btn.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 47</value>
+  </data>
+  <data name="findresource_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="zipFolderError" xml:space="preserve">
+    <value>Zipping folder for encryption failed.</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="serverResponse1002" xml:space="preserve">
+    <value>User created successfully.</value>
+  </data>
+  <data name="createaccount_btn.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="createaccount_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="unzipFolderFailed" xml:space="preserve">
+    <value>Unzipping folder after decryption failed.</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="findresource_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="serverResponse1003" xml:space="preserve">
+    <value>A user with that username does not exist.</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>186, 17</value>
+  </data>
+  <data name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="file" xml:space="preserve">
+    <value>file</value>
+  </data>
+  <data name="folder" xml:space="preserve">
+    <value>folder</value>
+  </data>
+  <data name="welcomeMessage" xml:space="preserve">
+    <value>Welcome to Griesinger Crypto. Please insert the server name and your user credentials above and select a file or folder to encrypt. Encrypted files will always end with the {0} file extension and are threated as files (even that it would be a encrypted folder). So make sure to select the Resource Type "File" if you are looking to decrypt something.</value>
+  </data>
+</root>
