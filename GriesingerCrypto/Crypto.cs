@@ -18,9 +18,6 @@ namespace GriesingerCrypto
         /// </summary>
         public const string CryptedFileExtension = ".jgc";
 
-        private BackgroundWorker _encryptBackgroundWorker;
-        private BackgroundWorker _decryptBackgroundWorker;
-
         public Crypto()
         {
             //Setup background workers. We wan't them to report progress.
@@ -34,16 +31,8 @@ namespace GriesingerCrypto
             DecryptBackgroundWorker.WorkerSupportsCancellation = true;
         }
 
-        public BackgroundWorker EncryptBackgroundWorker
-        {
-            get { return _encryptBackgroundWorker; }
-            private set { _encryptBackgroundWorker = value; }
-        }
-        public BackgroundWorker DecryptBackgroundWorker
-        {
-            get { return _decryptBackgroundWorker; }
-            private set { _decryptBackgroundWorker = value; }
-        }
+        public BackgroundWorker EncryptBackgroundWorker { get; private set; }
+        public BackgroundWorker DecryptBackgroundWorker { get; private set; }
 
         /// <summary>
         /// Creates a random salt that will be used to encrypt your file. This method is required on FileEncrypt.
@@ -111,7 +100,7 @@ namespace GriesingerCrypto
 
             FileStream fsIn = new FileStream(inputPath, FileMode.Open);
 
-            //create a buffer (1mb) so only this amount will allocate in the memory and not the whole file
+            //create a buffer (1mb) so only this amount will be allocated in memory and not the whole file
             byte[] buffer = new byte[1048576];
             int read;
 

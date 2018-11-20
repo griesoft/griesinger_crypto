@@ -28,7 +28,7 @@ namespace GriesingerCrypto
         public async Task RegisterUserAsync(string username, string password, Action<string> outputDialogWriteMethod)
         {
             if (client == null)
-                client = new MobileServiceClient(CreateServerUrl());
+                client = new MobileServiceClient(CreateServerUrl);
 
             try
             {
@@ -58,7 +58,7 @@ namespace GriesingerCrypto
         public async Task<string> GetEncryptionKey(string username, string password, Action<string> outputDialogWriteMethod)
         {
             if (client == null)
-                client = new MobileServiceClient(CreateServerUrl());
+                client = new MobileServiceClient(CreateServerUrl);
 
             try
             {
@@ -95,9 +95,9 @@ namespace GriesingerCrypto
                 client = null;
         }
 
-        private string CreateServerUrl()
+        private string CreateServerUrl
         {
-            return UrlPrefix + ServerName + Host;
+            get { return UrlPrefix + ServerName + Host; } 
         }
     }
 
