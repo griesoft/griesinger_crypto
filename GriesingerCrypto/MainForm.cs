@@ -24,7 +24,7 @@ namespace GriesingerCrypto
         /// <summary>
         /// This property is mainly used by <see cref="WriteProgressDotsToOutput"/>.
         /// </summary>
-        private bool HeayvyProcessInProgress { get; set; }
+        private bool HeavyProcessInProgress { get; set; }
 
         /// <summary>
         /// Access to localized strings.
@@ -37,7 +37,7 @@ namespace GriesingerCrypto
 
             ServerClient = new ServerClient();
             GCrypto = new Crypto();
-            HeayvyProcessInProgress = false;
+            HeavyProcessInProgress = false;
 
             //Get the resource manager for access to localized strings.
             Resources = Properties.Resources.ResourceManager;
@@ -100,7 +100,7 @@ namespace GriesingerCrypto
         {
             WriteProgressDotsToOutput();
             await ServerClient.RegisterUserAsync(Username, Password, WriteToOutput);
-            HeayvyProcessInProgress = false;
+            HeavyProcessInProgress = false;
         }
         private async void encrypt_btn_Click(object sender, EventArgs e)
         {
@@ -113,7 +113,7 @@ namespace GriesingerCrypto
 
             string key = await ServerClient.GetEncryptionKey(Username, Password, WriteToOutput);
 
-            HeayvyProcessInProgress = false;
+            HeavyProcessInProgress = false;
 
             if (!String.IsNullOrEmpty(key))
             {
@@ -153,7 +153,7 @@ namespace GriesingerCrypto
 
             string key = await ServerClient.GetEncryptionKey(Username, Password, WriteToOutput);
 
-            HeayvyProcessInProgress = false;
+            HeavyProcessInProgress = false;
 
             if (!String.IsNullOrEmpty(key))
             {
@@ -207,12 +207,12 @@ namespace GriesingerCrypto
         /// <summary>
         /// Writes dots and removes them to the output of this Form. This is to show the user that the 
         /// program is still doing work.
-        /// CAUTION: You need to set <see cref="HeayvyProcessInProgress"/> to false after a heavy process has finnished.
+        /// CAUTION: You need to set <see cref="HeavyProcessInProgress"/> to false after a heavy process has finnished.
         /// Else this method will keep looping forever.
         /// </summary>
         private async void WriteProgressDotsToOutput()
         {
-            HeayvyProcessInProgress = true;
+            HeavyProcessInProgress = true;
 
             //Start a task that will keep printing 10 dots to the output
             //and after that removes them and repeats this until canceled
@@ -220,7 +220,7 @@ namespace GriesingerCrypto
             {
                 int count = 0;
 
-                while (HeayvyProcessInProgress)
+                while (HeavyProcessInProgress)
                 {
                     count++;
 
@@ -347,7 +347,7 @@ namespace GriesingerCrypto
 
                 ZipFile.CreateFromDirectory(ResourcePath, outputPath + folderName + ".zip");
 
-                HeayvyProcessInProgress = false;
+                HeavyProcessInProgress = false;
 
                 outputPath = outputPath + folderName + ".zip";
 
@@ -379,7 +379,7 @@ namespace GriesingerCrypto
 
                 ZipFile.ExtractToDirectory(inputPath, outputPath.Remove(outputPath.Length - ".zip".Length, ".zip".Length));
 
-                HeayvyProcessInProgress = false;
+                HeavyProcessInProgress = false;
 
                 WriteToOutput(Resources.GetString("unzipFolderSuccess"));
                 return true;
