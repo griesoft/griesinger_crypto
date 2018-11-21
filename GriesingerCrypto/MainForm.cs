@@ -359,6 +359,7 @@ namespace GriesingerCrypto
             {
                 WriteToOutput(ex.Message);
                 WriteToOutput(Resources.GetString("zipFolderError"));
+                HeavyProcessInProgress = false;
                 return false;
             }
         }
@@ -388,6 +389,7 @@ namespace GriesingerCrypto
             {
                 WriteToOutput(ex.Message);
                 WriteToOutput(Resources.GetString("unzipFolderFailed"));
+                HeavyProcessInProgress = false;
                 return false;
             }
         }
